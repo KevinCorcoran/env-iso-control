@@ -25,6 +25,9 @@ File { backup => false }
 # specified in the console for that node.
 
 node default {
+  mynotify { "a BLUE mynotify resource" :
+    color => "blue"
+  } 
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
